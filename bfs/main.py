@@ -7,7 +7,6 @@ def bfs_path(graph, start, end):
     while queue: 
         (vertex, path) = queue.popleft()  # Dequeue a vertex from queue
         if vertex not in visited: 
-            print(vertex, end=" ")  # Print the current vertex
             visited.add(vertex)  # Mark the vertex as visited
 
 
@@ -17,7 +16,7 @@ def bfs_path(graph, start, end):
                 if neighbor == end: 
                     return path + [neighbor] # Return path when end is found
                 if neighbor not in visited: 
-                    queue.append(neighbor, path + [neighbor]))
+                    queue.append((neighbor, path + [neighbor]))
     return None # Path not found
 
 
