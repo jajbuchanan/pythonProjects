@@ -1,0 +1,9 @@
+import math
+
+pi = 3.14
+
+print(round(pi))
+print(round(3.14))
+print(math.ceil(pi))
+print(abs(pi)) # Tells you how far a number is away from zero. 
+
