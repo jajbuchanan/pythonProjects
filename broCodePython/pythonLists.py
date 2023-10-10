@@ -2,4 +2,20 @@
 
 food = ["pizza", "hamburger", "hotdog", "spaghetti", "pudding"]
 
-food[0] =
+print(food[0])
+food[0] = "sushi"
+
+food.append("ice cream")
+food.remove("hotdog")
+
+barf = food.pop()
+print("after popping: " + barf)
+food.sort()
+
+food.insert(0, "cake")
+
+for x in food: 
+    print(x)
+
+food.clear()
+print(food)
